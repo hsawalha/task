@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f2f3f4;
+}
+.swiper-container{
+    width: 600px;
+    margin: auto !important;
+    display: block;
+    height: 560px;
+    position: relative;
+    
+}
+
+.swiper-row{
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+
+.swiper-actions{
+    width: 350px;
+    margin: auto !important;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.swiper-area{
+    width: 40%;
+    padding: 10px;
+    float: left;
+}
+
+.swiper-card{
+    display: none;
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    cursor: hand;
+    top: 120px;
+    left: 120px;
+    box-shadow: 5px 5px 8px #a0a1a1;
+}
+
+.card-profile-section{
+    padding: 10px;
+    text-align: center;
+}
+
+img.profile-image{
+
+    max-height: 150px;
+    border: 2px solid #f1f2f3;
+    border-radius: 100%;
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.card-profile-info{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.action-meet {
+    background-color:#4CAF50;
+    -webkit-animation: acceptMeeting 0.5s forwards;
+	animation: acceptMeeting 0.5s forwards;
+}
+
+.action-pass {
+    background-color: #c10808;
+    -webkit-animation: cancelMeeting 0.5s forwards;
+	animation: cancelMeeting 0.5s forwards;
+}
+
+
+@-webkit-keyframes acceptMeeting {
+	to {
+        opacity: 0;
+        z-index: 10;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+}
+
+@keyframes acceptMeeting {
+	to {
+        opacity: 0;
+        z-index: 10;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+}
+
+
+@-webkit-keyframes cancelMeeting {
+	to {
+        opacity: 0;
+        z-index: 10;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes cancelMeeting {
+	to {
+        opacity: 0;
+        z-index: 10;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+
+.emp-head{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 6px;
+}
+
+.emp-info{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.info-no-margin-no-padding{
+    padding: 0;
+    margin: 0;
+}
+
+.meet-button{
+    background-color: #4CAF50 !important; 
+    color: #ffffff !important;;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.pass-button{
+    background-color: #c10808 !important;  
+    color: #ffffff !important;;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+}
